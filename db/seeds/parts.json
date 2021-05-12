@@ -1,0 +1,32 @@
+[
+  {
+    "part_number": "MS90728-11",
+    "description": "Hex Cap Screw Alloy, 1/4-20 X 1-3/8",
+    "manufacturer": "Best Parts Inc.",
+    "stock_quantity": 500
+  },
+  {
+    "part_number": "MS90728-12",
+    "description": "Hex Cap Screw Alloy, 1/4-20 X 1-1/2",
+    "manufacturer": "AeroTech LLC",
+    "stock_quantity": 1000
+  },
+  {
+    "part_number": "NAS1352-6-20P",
+    "description": "Cadmium Plated Screw Cap Socket Head, 3/8-16 X 1-1/4",
+    "manufacturer": "Best Parts Inc.",
+    "stock_quantity": 2500
+  },
+  {
+    "part_number": "NAS1352-6-24P",
+    "description": "Cadmium Plated Screw Cap Socket Head, 3/8-16 X 1-1/2",
+    "manufacturer": "AeroTech LLC",
+    "stock_quantity": 200
+  },
+  {
+    "part_number": "NASM16995-109",
+    "description": "Stainless Steel Screw Cap Socket Head, 5/8-11 X 1-1/2",
+    "manufacturer": "Quality Supply Inc.",
+    "stock_quantity": 5500
+  }
+]
