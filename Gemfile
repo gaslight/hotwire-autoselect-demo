@@ -23,11 +23,13 @@ group :development do
   gem 'listen', '~> 3.3'
   gem 'rack-mini-profiler', '~> 2.0'
   gem 'spring'
+  gem 'stackprof'
   gem 'web-console', '>= 4.1.0'
 end
 
 group :test do
   gem 'capybara', '>= 3.26'
+  gem 'rails-controller-testing'
   gem 'rexml'
   gem 'selenium-webdriver'
   gem 'shoulda-matchers'
