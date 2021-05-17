@@ -2,6 +2,18 @@ require "rails_helper"
 
 RSpec.describe PartsController, type: :routing do
   describe "routing" do
+    it "routes to #autosuggest" do
+      expect(get: "/parts/autosuggest").to route_to("parts#autosuggest")
+    end
+
+    it "routes to #fetch" do
+      expect(get: "/parts/fetch").to route_to("parts#fetch")
+    end
+
+    it "routes to #reset" do
+      expect(get: "/parts/reset").to route_to("parts#reset")
+    end
+
     it "routes to #index" do
       expect(get: "/parts").to route_to("parts#index")
     end
