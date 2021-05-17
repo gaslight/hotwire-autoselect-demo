@@ -1,6 +1,27 @@
 class PartsController < ApplicationController
   before_action :set_part, only: %i[ show edit update destroy ]
 
+  # GET /parts/autosuggest
+  def autosuggest
+    @part_numbers = Part.where('part_number LIKE ?', "#{query}%").pluck(:part_number)
+
+    render partial: 'autosuggest'
+  end
+
+  # GET /parts/fetch
+  def fetch
+    @part = Part.find_by(part_number: query)
+
+    render @part, partial: "parts/part"
+  end
+
+  # GET /parts/reset
+  def reset
+    @parts = Part.all.order(:part_number)
+
+    render @parts
+  end
+
   # GET /parts or /parts.json
   def index
     @parts = Part.all.order(:part_number)
@@ -65,5 +86,9 @@ class PartsController < ApplicationController
     # Only allow a list of trusted parameters through.
     def part_params
       params.require(:part).permit(:part_number, :description, :manufacturer, :stock_quantity)
+    end
+
+    def query
+      params[:q]
     end
 end
