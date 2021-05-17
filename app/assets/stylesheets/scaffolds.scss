@@ -63,3 +63,33 @@ div.actions {
 
 label {
   display: block; }
+
+.search-container {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+}
+
+.part-search {
+  margin-right: 20px;
+  max-width: 200px;
+  position: relative;
+}
+
+.search-list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+  li {
+    background-color: #fff;
+    border: solid 1px #000000;
+    list-style: none;
+    &:hover {
+      background-color: #dfdfdf;
+      cursor: pointer;
+    }
+    margin: 0;
+    padding: 0.5em 1em;
+  }
+}
